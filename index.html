@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <script src="objects.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Ubuntu&display=swap');
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <h1 class="title">Library</h1>
+        <button class="addBook">+</button>
+    </div>
+    <form action="" method="post" class="formInvisible">
+        <fieldset class="inputTitle">
+            <label for="userTitle">Title</label>
+            <input class="userTitle" type="text" name="Title" placeholder="Title" required>
+        </fieldset>
+        <fieldset class="inputAuthor">
+            <label for="">Author</label>
+            <input class="userAuthor" type="text" name="Author" placeholder="Author" required>
+        </fieldset>
+        <fieldset class="inputNumPages">
+            <label for="userNumPages">Number of Pages</label>
+            <input class="userNumPages" name="userNumPages" type="number" placeholder="0000" max="9000" required>
+        </fieldset>
+        <fieldset class="inputRead">
+            <label for="userRead">Read?</label>
+            <button class="userRead notRead" name="userRead" type="button" onclick="formReadChange()">No</button>
+        </fieldset>
+        <input type="submit" value="SUBMIT" class="inputSubmit">
+    </form>
+    <div class="bookshelf">
+        
+    </div>
+
+
+
+</body>
+</html>
